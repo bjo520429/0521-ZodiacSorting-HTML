@@ -8,38 +8,56 @@
   <body>
     <script>
       const zoo = ["鼠", "雞", "猴", "龍", "馬"];
-      console.log("十二生肖排序:", sortZoo(zoo));
+      // console.log("十二生肖排序:", sortZoo(zoo));
+      // function sortZoo(zoo) {
+      //   const sample = [
+      //     "鼠",
+      //     "牛",
+      //     "虎",
+      //     "兔",
+      //     "龍",
+      //     "蛇",
+      //     "馬",
+      //     "羊",
+      //     "猴",
+      //     "雞",
+      //     "狗",
+      //     "豬",
+      //   ];
+      //   const animalsToIndex = new Array();
+      //   zoo.forEach(function (item) {
+      //     console.log(sample.indexOf(item));
+      //     item = sample.indexOf(item);
+      //     animalsToIndex.push(item);
+      //   });
+      //   console.log(animalsToIndex);
+      //   animalsToIndex.sort((a, b) => a - b);
+      //   const res = new Array();
+      //   animalsToIndex.forEach(function (item) {
+      //     item = sample[item];
+      //     res.push(item);
+      //   });
+      //   return res;
 
-      function sortZoo(zoo) {
-        const sample = [
-          "鼠",
-          "牛",
-          "虎",
-          "兔",
-          "龍",
-          "蛇",
-          "馬",
-          "羊",
-          "猴",
-          "雞",
-          "狗",
-          "豬",
-        ];
-        const animalsToIndex = new Array();
-        zoo.forEach(function (item) {
-          console.log(sample.indexOf(item));
-          item = sample.indexOf(item);
-          animalsToIndex.push(item);
-        });
-        console.log(animalsToIndex);
-        animalsToIndex.sort((a, b) => a - b);
-        const res = new Array();
-        animalsToIndex.forEach(function (item) {
-          item = sample[item];
-          res.push(item);
-        });
-        return res;
-      }
+      // }
+      const sample = [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇",
+        "馬",
+        "羊",
+        "猴",
+        "雞",
+        "狗",
+        "豬",
+      ];
+      console.log(
+        "生肖排序:",
+        zoo.sort((a, b) => sample.indexOf(a) - sample.indexOf(b)),
+      );
     </script>
   </body>
 </html>
